@@ -1,6 +1,6 @@
 ## Cal AeroSAE Biplane Spar Reactions, Shear, and Bending Moment Calculation in MATLAB
 
-<img width="2250" height="1591" alt="Spar_FBD" src="https://github.com/user-attachments/assets/6f23bb52-15ca-4c3c-8e1b-8f31f38d9dd5" />
+<img width="2250" height="1500" alt="Spar_FBD" src="https://github.com/user-attachments/assets/6f23bb52-15ca-4c3c-8e1b-8f31f38d9dd5" />
 
 ## Modeled Loads
 
