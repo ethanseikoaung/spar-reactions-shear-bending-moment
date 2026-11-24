@@ -22,7 +22,7 @@ $$M_R = w_0\frac{l^2}{2} - L_{max}\frac{l^2}{3}$$
 
 ## Shear and Bending Moment
 
-* From hand calculations, we get the expression for shear and bending moment at each x location along the span.
+*Expressions used to model shear and bending moment.
 
 $$V(x) = -\frac{L_{max}}{2}l\arccos\left(\frac{x}{l}\right) + \frac{x}{l}\sqrt{\left(1 - \left(\frac{x}{l}\right)^2\right)} + \frac{\pi}{2} + R_y - w_0x$$
 
