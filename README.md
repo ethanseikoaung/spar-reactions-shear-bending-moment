@@ -1,4 +1,4 @@
-# SAE Biplane Semi-Span Load Analysis
+# Cal Aerospace SAE Biplane Semi-Span Load Analysis
 
 Load analysis of one semi-span of Cal Aerospace's SAE biplane. Root reactions and spanwise shear-force expressions are derived by hand, and the results are visualized in MATLAB.
 
