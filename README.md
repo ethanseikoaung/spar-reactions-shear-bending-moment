@@ -1,29 +1,54 @@
-## Cal AeroSAE Biplane Spar Reactions, Shear, and Bending Moment Calculation in MATLAB
+# SAE Biplane Semi-Span Load Analysis
 
-<img width="2250" height="1500" alt="Spar_FBD" src="https://github.com/user-attachments/assets/6f23bb52-15ca-4c3c-8e1b-8f31f38d9dd5" />
+Load analysis of one semi-span of Cal Aerospace's SAE biplane. Root reactions and spanwise shear-force expressions are derived by hand, and the results are visualized in MATLAB.
 
-## Modeled Loads
+## Project Goals
 
-* Lift is modeled as an elliptical distributed force along the spar.
+- Derive expressions for the root reactions and spanwise shear-force distributions.
+- Plot the resulting shear-force and bending-moment diagrams in MATLAB.
 
-$$L(x) = L_{max}\sqrt{1 - \left(\frac{x}{l}\right)^2}$$
+## Features
 
-* Weight is assumed to be a linear distribution.
+### Load Model
+
+Lift is modeled as an elliptical distribution along the semi-spar:
+
+$$L(x) = L_{max}\sqrt{1-\left(\frac{x}{l}\right)^2}$$
+
+Weight is assumed to be uniformly distributed:
 
 $$W(x) = w_0$$
 
-## Reactions
+### Root Reactions
 
-* From hand calculations, we get the expressions for reaction forces and moments at root.
+The hand-derived expression for the root reaction force:
 
-$$R_y = w_0l - L_{max}l\frac{\pi}{4}$$
+$$R_y = w_0 l - L_{max}\, l\, \frac{\pi}{4}$$
 
-$$M_R = w_0\frac{l^2}{2} - L_{max}\frac{l^2}{3}$$
+The hand-derived expression for the root moment:
 
-## Shear and Bending Moment
+$$M_R = w_0 \frac{l^2}{2} - L_{max} \frac{l^2}{3}$$
 
-*Expressions used to model shear and bending moment.
+### Shear and Bending Moment
 
-$$V(x) = -\frac{L_{max}}{2}l\arccos\left(\frac{x}{l}\right) + \frac{x}{l}\sqrt{\left(1 - \left(\frac{x}{l}\right)^2\right)} + \frac{\pi}{2} + R_y - w_0x$$
+The shear force as a function of spanwise position:
 
-$$M(x) = \int_{0}^{l} V(x)dx$$
+$$V(x) = -\frac{L_{max}}{2}\, l \arccos\left(\frac{x}{l}\right) + \frac{x}{l}\sqrt{1-\left(\frac{x}{l}\right)^2} + \frac{\pi}{2} + R_y - w_0 x$$
+
+The bending moment as a function of spanwise position:
+
+$$M(x) = \int_{0}^{l} V(x)\, dx$$
+
+### MATLAB Plots
+
+Shear-force and bending-moment distributions are plotted along the semi-span in MATLAB.
+
+## Challenges
+
+- Inconsistent sign conventions caused errors during the initial calculations.
+
+## Areas for Further Improvement
+
+- Replace the uniform-weight assumption with a tapered spanwise weight distribution.
+- Write a program to calculate the minimum cross-sectional area required at each spanwise position and optimize the spar geometry along the span.
+- Account for torsion in the box-wing cross-section.
