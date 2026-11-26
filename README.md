@@ -39,4 +39,6 @@ $$M(x) = \int_{0}^{l} V(x)\, dx$$
 
 Shear-force and bending-moment distributions are plotted along the semi-span in MATLAB.
 
+<img width="1128" height="745" alt="image" src="https://github.com/user-attachments/assets/1f3fe53a-6beb-48c2-a8f6-50df52dfc456" />
+<img width="1121" height="745" alt="image" src="https://github.com/user-attachments/assets/99fd2f1b-7550-4370-ad01-bf5b4efbc56d" />
 
