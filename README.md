@@ -2,12 +2,6 @@
 
 Load analysis of one semi-span of Cal Aerospace's SAE biplane. Root reactions and spanwise shear-force expressions are derived by hand, and the results are visualized in MATLAB.
 
-## Project Goals
-
-- Derive expressions for the root reactions and spanwise shear-force distributions.
-- Plot the resulting shear-force and bending-moment diagrams in MATLAB.
-
-## Features
 
 ### Load Model
 
@@ -18,6 +12,8 @@ $$L(x) = L_{max}\sqrt{1-\left(\frac{x}{l}\right)^2}$$
 Weight is assumed to be uniformly distributed:
 
 $$W(x) = w_0$$
+
+<img width="2000" height="1000" alt="image" src="https://github.com/user-attachments/assets/fe339099-76d7-45af-9f59-5194632ad620" />
 
 ### Root Reactions
 
@@ -43,12 +39,4 @@ $$M(x) = \int_{0}^{l} V(x)\, dx$$
 
 Shear-force and bending-moment distributions are plotted along the semi-span in MATLAB.
 
-## Challenges
 
-- Inconsistent sign conventions caused errors during the initial calculations.
-
-## Areas for Further Improvement
-
-- Replace the uniform-weight assumption with a tapered spanwise weight distribution.
-- Write a program to calculate the minimum cross-sectional area required at each spanwise position and optimize the spar geometry along the span.
-- Account for torsion in the box-wing cross-section.
